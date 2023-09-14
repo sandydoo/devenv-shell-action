@@ -18,6 +18,5 @@ jobs:
     - run: devenv ci
     - run: devenv shell
     - shell: devenv shell "{0}"
-      run: |
-        printenv
+      run: hello
 
