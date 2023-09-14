@@ -16,7 +16,7 @@ jobs:
     - name: Install devenv.sh
       run: nix profile install tarball+https://install.devenv.sh/latest
     - run: devenv ci
-    - shell: devenv shell
+    - shell: devenv shell {0}
       run: |
         hello
         printenv
