@@ -17,6 +17,8 @@ jobs:
       run: nix profile install tarball+https://install.devenv.sh/latest
     - run: devenv ci
     - run: devenv shell
-    - shell: devenv shell "{0}"
-      run: hello
+    - run: devenv shell hello
+    - shell: devenv shell {0}
+      run: |
+        hello
 
