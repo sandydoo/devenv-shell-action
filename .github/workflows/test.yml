@@ -18,7 +18,7 @@ jobs:
     - run: devenv ci
     - run: devenv shell
     - run: devenv shell hello
-    - shell: devenv shell {0}
+    - shell: devenv shell bash -e {0}
       run: |
         hello
 
